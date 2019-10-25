@@ -1,5 +1,3 @@
-
-
 function createNewRegister(){
     var name = document.getElementById('name').value;
     var lastName = document.getElementById('lastName').value;
@@ -19,7 +17,7 @@ function createNewRegister(){
     var relationship = document.getElementById('relationship').value;
     var born = document.getElementById('born').value;
     var course = 'Programación orientada a Objetos';
-
+    var plan = document.getElementById('plan').value;
      axios.post('http://localhost:3000/api/addRecord',{
          name: name,
          lastName: lastName,
@@ -38,9 +36,12 @@ function createNewRegister(){
          account: account,
          attendant: attendant,
          relationship: relationship,
-         cycle: cycle
+         cycle: cycle,
+         plan: plan
      }).then(function(response){
          console.log(response);
+         window.open('https://academik.io', 'blank');
+         window.location.reload();
          
      }).catch(function(error){
          console.log(error);

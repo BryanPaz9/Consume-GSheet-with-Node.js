@@ -13,29 +13,29 @@
         <form onsubmit="createNewRegister()" >
             <div class="form-row">
                 <div class="col-md-4 mb-3">
-                    <label for="validationDefault01">First Name</label>
+                    <label for="validationDefault01">Nombres</label>
                     <input type="text" class="form-control" id="name" placeholder="First Name"
                         required>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <label for="validationDefault02">Last Name</label>
+                    <label for="validationDefault02">Apellidos</label>
                     <input type="text" class="form-control" id="lastName" placeholder="Last Name"
                         required>
                 </div>
                 <div class="col-md-2 mb-3">
-                    <label for="validationDefaultUsername">Employee Id</label>
+                    <label for="validationDefaultUsername">Id</label>
                     <div class="input-group">
                         <input type="number" class="form-control" id="employeeId" placeholder="Employee Id"required>
                     </div>
                 </div>
                 <div class="col-md-2 mb-3">
-                    <label for="validationDefault03">Nit</label>
+                    <label for="validationDefault03">NIT</label>
                     <input type="text" class="form-control" id="nit" placeholder="Nit" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="col-md-2 mb-3">
-                    <label for="validationDefault04">Phone</label>
+                    <label for="validationDefault04">Telefono</label>
                     <input type="text" class="form-control" id="phone" placeholder="Phone" required>
                 </div>
                 <div class="col-md-4 mb-3">
@@ -43,7 +43,7 @@
                     <input type="text" class="form-control" id="mail" placeholder="Mail" required>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label for="validationDefault03">Address</label>
+                    <label for="validationDefault03">Dirección</label>
                     <input type="text" class="form-control" id="address" placeholder="Address" required>
                 </div>
             </div>
@@ -53,49 +53,53 @@
                     <input type="text" class="form-control" id="dpi" placeholder="DPI" required>
                 </div>
                 <div class="col-md-2 mb-3">
-                    <label for="validationDefault05">Account</label>
+                    <label for="validationDefault05">Cuenta</label>
                     <input type="text" class="form-control" id="account" placeholder="Account" required>
                 </div>
                 <div class="col-md-2 mb-3">
-                    <label for="validationDefault04">Company</label>
+                    <label for="validationDefault04">Empresa</label>
                     <input type="text" class="form-control" id="company" placeholder="Company" required>
                 </div>
                 <div class="col-md-2 mb-3">
-                    <label for="validationDefault03">Payment</label>
+                    <label for="validationDefault03">Cuota</label>
                     <input type="number" class="form-control" id="payment" placeholder="Payment" required>
                 </div>
-                <div class="col-md-2 mb-3">
-                    <label for="validationDefault05">Installements</label>
+                <div class="col-md-1 mb-3">
+                    <label for="validationDefault05">Pagos</label>
                     <input type="number" class="form-control" id="installement" placeholder="Installements" required>
                 </div>
-                <div class="col-md-2 mb-3">
-                    <label for="validationDefault04">Cycle</label>
+                <div class="col-md-1 mb-3">
+                    <label for="validationDefault04">Ciclo</label>
                     <input type="number" class="form-control" id="cycle" placeholder="Cycle" required>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="validationDefault05">Plan</label>
+                    <input type="text" class="form-control" id="plan" placeholder="Plan" required>
                 </div>
             </div>
             <div class="form-row">
             </div>
             <div class="form-row">
                 <div class="col-md-4 mb-3">
-                    <label for="validationDefault05">Attendant</label>
+                    <label for="validationDefault05">Encargado</label>
                     <input type="text" class="form-control" id="attendant" placeholder="Attendant" required>
                 </div>
                 <div class="col-md-2 mb-3">
-                    <label for="validationDefault05">Relationship</label>
+                    <label for="validationDefault05">Parentesto</label>
                     <input type="text" class="form-control" id="relationship" placeholder="Relationship" required>
                 </div>
                 <div class="col-md-3 mb-3">
-                    <label for="validationDefault05">Date</label>
+                    <label for="validationDefault05">Fecha</label>
                     <input type="date" class="form-control" id="date" placeholder="Date" required>
                 </div>
                 <div class="col-md-3 mb-3">
-                    <label for="validationDefault05">Born Date</label>
+                    <label for="validationDefault05">Fecha de Nacimiento</label>
                     <input type="date" class="form-control" id="born" placeholder="Born Date" required>
                 </div>
             </div>
             <div class="form-group">
             </div>
-            <button class="btn btn-primary" type="submit">Agregar Registro a Google Sheet</button>
+            <button class="btn btn-primary" onclick="createNewRegister()" type="button">Agregar Registro a Google Sheet</button>
         </form>
     </div>
     <script src="./js/app.js"></script>
