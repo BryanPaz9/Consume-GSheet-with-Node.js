@@ -10,7 +10,7 @@
 <body>
     <br><br><br><br>
     <div class="container">
-        <form onsubmit="createNewRegister()">
+        <form onsubmit="createNewRegister()" >
             <div class="form-row">
                 <div class="col-md-4 mb-3">
                     <label for="validationDefault01">First Name</label>
@@ -22,23 +22,19 @@
                     <input type="text" class="form-control" id="lastName" placeholder="Last Name"
                         required>
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-2 mb-3">
                     <label for="validationDefaultUsername">Employee Id</label>
                     <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="spanEmployeeId">#</span>
-                        </div>
-                        <input type="number" class="form-control" id="employeeId" placeholder="Employee Id"
-                            aria-describedby="inputGroupPrepend2" required>
+                        <input type="number" class="form-control" id="employeeId" placeholder="Employee Id"required>
                     </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="col-md-4 mb-3">
+                <div class="col-md-2 mb-3">
                     <label for="validationDefault03">Nit</label>
                     <input type="text" class="form-control" id="nit" placeholder="Nit" required>
                 </div>
-                <div class="col-md-4 mb-3">
+            </div>
+            <div class="form-row">
+                <div class="col-md-2 mb-3">
                     <label for="validationDefault04">Phone</label>
                     <input type="text" class="form-control" id="phone" placeholder="Phone" required>
                 </div>
@@ -46,33 +42,55 @@
                     <label for="validationDefault05">Mail</label>
                     <input type="text" class="form-control" id="mail" placeholder="Mail" required>
                 </div>
-            </div>
-            <div class="form-row">
                 <div class="col-md-6 mb-3">
                     <label for="validationDefault03">Address</label>
                     <input type="text" class="form-control" id="address" placeholder="Address" required>
                 </div>
-                <div class="col-md-3 mb-3">
+            </div>
+            <div class="form-row">
+                <div class="col-md-2 mb-3">
                     <label for="validationDefault04">DPI</label>
                     <input type="text" class="form-control" id="dpi" placeholder="DPI" required>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <label for="validationDefault03">Payment</label>
-                    <input type="number" class="form-control" id="payment" placeholder="Payment" required>
+                <div class="col-md-2 mb-3">
+                    <label for="validationDefault05">Account</label>
+                    <input type="text" class="form-control" id="account" placeholder="Account" required>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="col-md-4 mb-3">
+                <div class="col-md-2 mb-3">
                     <label for="validationDefault04">Company</label>
                     <input type="text" class="form-control" id="company" placeholder="Company" required>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <label for="validationDefault05">Date</label>
-                    <input type="date" class="form-control" id="date" placeholder="Payment" required>
+                <div class="col-md-2 mb-3">
+                    <label for="validationDefault03">Payment</label>
+                    <input type="number" class="form-control" id="payment" placeholder="Payment" required>
                 </div>
+                <div class="col-md-2 mb-3">
+                    <label for="validationDefault05">Installements</label>
+                    <input type="number" class="form-control" id="installement" placeholder="Installements" required>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="validationDefault04">Cycle</label>
+                    <input type="number" class="form-control" id="cycle" placeholder="Cycle" required>
+                </div>
+            </div>
+            <div class="form-row">
+            </div>
+            <div class="form-row">
                 <div class="col-md-4 mb-3">
-                    <label for="validationDefault05">Account</label>
-                    <input type="text" class="form-control" id="account" placeholder="Account" required>
+                    <label for="validationDefault05">Attendant</label>
+                    <input type="text" class="form-control" id="attendant" placeholder="Attendant" required>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="validationDefault05">Relationship</label>
+                    <input type="text" class="form-control" id="relationship" placeholder="Relationship" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationDefault05">Date</label>
+                    <input type="date" class="form-control" id="date" placeholder="Date" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationDefault05">Born Date</label>
+                    <input type="date" class="form-control" id="born" placeholder="Born Date" required>
                 </div>
             </div>
             <div class="form-group">

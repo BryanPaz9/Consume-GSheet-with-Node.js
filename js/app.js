@@ -13,21 +13,32 @@ function createNewRegister(){
     var company = document.getElementById('company').value;
     var date = document.getElementById('date').value;
     var account = document.getElementById('account').value;
-    
+    var cycle = document.getElementById('cycle').value;
+    var installement = document.getElementById('installement').value;
+    var attendant = document.getElementById('attendant').value;
+    var relationship = document.getElementById('relationship').value;
+    var born = document.getElementById('born').value;
+    var course = 'Programación orientada a Objetos';
 
      axios.post('http://localhost:3000/api/addRecord',{
          name: name,
          lastName: lastName,
+         born: born,
          employeeId: employeeId,
          nit: nit,
          phone: phone,
          mail: mail,
          address : address,
          dpi: dpi,
+         course: course,
          payment: payment,
+         installement: installement,
          company: company,
          date: date,
-         account: account
+         account: account,
+         attendant: attendant,
+         relationship: relationship,
+         cycle: cycle
      }).then(function(response){
          console.log(response);
          
